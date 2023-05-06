@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(233, 228, 228);
+    font-family: Arial, sans-serif,Arial,verdana;
+    font-size: 20px;
+    width: 100%;
+    height: 1000px;
+  }
+  header {
+    background-color: rgb(226, 226, 226);
+    font-family: Arial, sans-serif,Arial,verdana;
+    font-size: 20px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+}
+/* --------------Buscador------------- */
+form{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1%;
+}
+.buscador{
+    position: absolute;
+    padding: 5px;   
+    justify-content: space-between;
+}
+.buscador input {
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+.btn{ position: absolute; 
+    top: 0; 
+    right: 0; 
+    background: #003da5; 
+    width: 55px; 
+    height: 55px; 
+    line-height: 55px; 
+    text-align: center; 
+    color: white; 
+    border-radius: 50%; 
+    cursor: pointer;
+    font-size: 20px;
+}
+.buscador:hover input {
+    width: 540px;
+}
+.buscador input:focus {
+    width: 540px;
+}
+aside{
+    font-family: Arial, sans-serif,Arial,verdana;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+/* ----------MenuLat----------- */
+.icono-menu{
+    position: relative;
+    z-index: 10;
+    
+}
+.icono-menu:hover{
+    background-color: #003ca5ca;
+}
+.icono-menu img{
+    vertical-align: top;
+    width: 70px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.cont-menu{
+    background-color: #003ca599;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    list-style: none;
+    justify-content: flex-start;
+    flex-direction: column;  
+    padding: 2%;
+    transition: all .5s ease;
+    top: 0;
+    left: 0;
+
+}
+.active{
+    transform: translate(-600px); 
+}
+.opacity{
+    background-color: rgba(0,0,0,0.5);
+    transition: all .5s ease;
+
+}
+
+.cont-menu a{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.cont-menu a:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+    width: 20%;
+    height: 100%;
+}
+
+.temas{
+    width: 20%;
+}
+.temas a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #ffffff;
+ 
+}aside{
+    font-family: Arial, sans-serif,Arial,verdana;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+/* ----------MenuLat----------- */
+.icono-menu{
+    position: relative;
+    z-index: 10;
+    
+}
+.icono-menu:hover{
+    background-color: #003ca5ca;
+}
+.icono-menu img{
+    vertical-align: top;
+    width: 70px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.cont-menu{
+    background-color: #003ca599;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    list-style: none;
+    justify-content: flex-start;
+    flex-direction: column;  
+    padding: 2%;
+    transition: all .5s ease;
+    top: 0;
+    left: 0;
+
+}
+.active{
+    transform: translate(-600px); 
+}
+.opacity{
+    background-color: rgba(0,0,0,0.5);
+    transition: all .5s ease;
+}
+
+.cont-menu a{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.cont-menu a:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+}
+
+.temas{
+    width: 20%;
+}
+.temas a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #ffffff;
+ 
+}
+
+section{
+    background-color: rgb(231, 231, 231);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
