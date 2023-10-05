@@ -74,3 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showElements();
 });
+let segundos = 0;
+
+        // Función para actualizar el contador cada segundo
+        function actualizarContador() {
+            segundos++;
+            document.getElementById("contador").textContent = segundos + " segundos";
+        }
+
+        // Actualiza el contador cada 1000 milisegundos (1 segundo)
+        setInterval(actualizarContador, 1000);
