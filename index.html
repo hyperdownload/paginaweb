@@ -10,6 +10,19 @@
             <h1 class="domain_title">MrWhite</h1>
             <input type="text" id="searchInput" placeholder="Buscar elemento...">
             <p id="contador">0 Segundos</p>
+            <script>
+                // Inicializa el contador a cero
+                let segundos = 0;
+        
+                // Función para actualizar el contador cada segundo
+                function actualizarContador() {
+                    segundos++;
+                    document.getElementById("contador").textContent = segundos + " segundos";
+                }
+        
+                // Actualiza el contador cada 1000 milisegundos (1 segundo)
+                setInterval(actualizarContador, 1000);
+            </script>
         </header>
         <main class="container">
             <div id="elementContainer">
